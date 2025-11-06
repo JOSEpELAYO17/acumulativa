@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* LOGO */
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* Galería */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 120px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Lista */
+.selected {
+    margin-top: 30px;
+}
+
+#selectedList li {
+    background: #ddd;
+    padding: 8px 12px;
+    margin: 5px auto;
+    width: fit-content;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#selectedList li:hover {
+    background: #ff6f6f;
+    color: white;
+}

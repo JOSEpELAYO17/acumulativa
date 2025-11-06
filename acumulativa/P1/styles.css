@@ -1,0 +1,79 @@
+:root{
+  --primario: #2A6F97; /* Cambia por tu color principal */
+  --fondo: #F7FBFD;
+  --texto: #0f1720;
+  --card: #ffffff;
+}
+
+.dark{
+  --fondo: #0f1720;
+  --texto: #e6eef6;
+  --card: #14202a;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Inter, system-ui, Arial;
+  background: var(--fondo);
+  color: var(--texto);
+  transition: background .3s, color .3s;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: var(--card);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .04);
+}
+
+/* Logo */
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo{
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--primario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.title{ font-weight: 700; font-family: Montserrat; }
+.subtitle{ font-size: 12px; color: gray; }
+
+/* Navegación */
+nav a{
+  margin-left: 12px;
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 600;
+}
+
+/* Contenido */
+main{
+  padding: 28px;
+}
+
+/* Botón modo oscuro/claro */
+.toggle{
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: var(--primario);
+  color: white;
+  cursor: pointer;
+}
